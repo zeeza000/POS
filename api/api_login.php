@@ -14,9 +14,9 @@ if(isset($_REQUEST)){
         session_start();
         $_SESSION['sess_id'] = session_id();
         $_SESSION['sess_fullname'] = $result->fullname;
-        echo json_encode(array('status' => true,'message'=>"Successfully"));  
+        echo json_encode(array('status' => true,'massage'=>"Successfully"));  
     } else{
-        echo json_encode(array('status'=> false,'message'=> "Username or Password is incorrect "));
+        echo json_encode(array('status'=> false,'massage'=> "Username or Password is incorrect "));
     }
 }
 

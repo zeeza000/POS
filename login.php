@@ -104,6 +104,11 @@
       success: function(res, status){
         console.log(res.status);
         console.log(res.massage);
+        if (res.status == true) {
+          window.location.href = 'index.php';
+        } else {
+          alert(res.massage);
+        }
         
       },
       error: function(xhr,status,error) {
